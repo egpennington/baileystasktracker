@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chores list from Scrimba boot camp solo project">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Scrimba, bulldog, chores, to do list">
+        <meta name="author" content="Pennington Programming">
+        <title>Bailey's Task Tracker</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="shortcut icon" href="/images/bulldogLogo.png" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container">
+            <div class="main pd-5">    
+                <img src="/images/bulldogLogo.png" alt="English bulldog shadow" class="logo">
+
+                <h1 class="mr-20">Bailey's Task Tracker</h1>           
+    
+                <div class="main-inner">                
+                    <input type="text" class="input border pad-15 font-20" id="input-el" placeholder="Do dishes">
+                    <button class="btn-add border pad-1015 font-20" id="btn-add-el">-></button>
+                    <button class="btn-del border pad-1015 font-20" id="btn-del-el">
+                        <span class="font-9">dbl click</span>
+                        X
+                        <span class="font-9">all</span>
+                    </button>
+                </div>            
+    
+                <div class="output pd-5">
+                    
+                    <ul id="chore-list">
+                        <p>...no items yet...</p>
+                    </ul>
+                </div>    
+            </div>            
+        </div>    
+        <script src="/js/main.js"></script>
+    </body>
+</html>
+
+<!-- https://scrimba.com/scrim/cod6c4f598e8de14f10e1b0ba -->
