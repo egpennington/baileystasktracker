@@ -141,6 +141,7 @@ button:hover {
     margin-bottom: 5px;
     height: 60px;
     line-height: 21px;
+    overflow-x: hidden;
 }
 
 /* mobile responsive */
