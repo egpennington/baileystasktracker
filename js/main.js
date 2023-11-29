@@ -18,12 +18,18 @@ if (todoFromLocalStorage) {
 
 btnAddEl.addEventListener("click", function() {    
     let inputValue = inputEl.value
-    todo.push(inputValue)
     
-    localStorage.setItem("todo", JSON.stringify(todo))
+    if(inputValue === "") {
+        console.log("Please enter a task")        
+        
+    } else {
+        todo.push(inputValue)
+    
+        localStorage.setItem("todo", JSON.stringify(todo))
 
-    render(todo)
-    clearInput()
+        render(todo)
+        clearInput()
+    }    
 })
 
 function render(list) {
