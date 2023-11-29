@@ -140,7 +140,7 @@ button:hover {
     font-family: var(--secondary-font);
     margin-bottom: 5px;
     height: 60px;
-    line-height: normal;
+    line-height: 20px;
 }
 
 /* mobile responsive */
