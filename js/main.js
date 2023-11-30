@@ -24,7 +24,11 @@ btnAddEl.addEventListener("click", function() {
         console.log("Please enter a task")
         errorMsg.innerHTML = `
             Enter a task
-            `  
+            `
+
+        setTimeout(() => {
+            errorMsg.innerHTML = ""
+        }, 2000)
         
     } else {
         errorMsg.innerHTML = ""
