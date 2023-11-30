@@ -5,6 +5,7 @@ const btnDelEl = document.getElementById("btn-del-el")
 const choreList = document.getElementById("chore-list")
 const todoFromLocalStorage = JSON.parse( localStorage.getItem("todo") )
 const listEl = document.getElementById("list-el")
+const errorMsg = document.getElementById("error-msg")
 
 if (todoFromLocalStorage) {
     todo = todoFromLocalStorage
@@ -20,9 +21,13 @@ btnAddEl.addEventListener("click", function() {
     let inputValue = inputEl.value
     
     if(inputValue === "") {
-        console.log("Please enter a task")        
+        console.log("Please enter a task")
+        errorMsg.innerHTML = `
+            Enter a task
+            `  
         
     } else {
+        errorMsg.innerHTML = ""
         todo.push(inputValue)
     
         localStorage.setItem("todo", JSON.stringify(todo))
