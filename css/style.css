@@ -2,9 +2,10 @@
     --white: #FEFEFE;
     --black: #000;
     --grey: #eee;
+    --darkgrey: #968e85;
     --yellow: #FBDF7C;
     --main-font: 'Inter', sans-serif;
-    --secondary-font: 'Concert One', cursive, sans-serif;
+    --secondary-font: 'Concert One', cursive, sans-serif;  
 }
 
 * {
@@ -134,13 +135,22 @@ button:hover {
     align-items: center;
 }
 
-.inputEl {
-    background: var(--grey);
+input {
+    background-color: var(--grey);
+    color: var(--darkgrey);
+    padding: 15px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;    
     text-align: center;
+    margin: 10px 0;
     font-family: var(--secondary-font);
+}
+
+.error {
+    color: red;
     font-size: 1.2rem;
-    margin-bottom: 10px;
-    padding: 20px;
+    font-style: bold;
 }
 
 /* mobile responsive */
