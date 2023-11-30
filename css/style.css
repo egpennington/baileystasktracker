@@ -138,7 +138,9 @@ button:hover {
     background: var(--grey);
     text-align: center;
     font-family: var(--secondary-font);
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 20px;
 }
 
 /* mobile responsive */
