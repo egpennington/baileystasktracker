@@ -147,6 +147,10 @@ input {
     font-family: var(--secondary-font);
 }
 
+input::placeholder {
+    overflow: visible;
+}
+
 .error {
     color: red;
     font-size: 1.2rem;
